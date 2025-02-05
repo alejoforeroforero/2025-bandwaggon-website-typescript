@@ -1,0 +1,21 @@
+#home {
+  .hero {
+    display: flex;
+    justify-content: center;
+  }
+
+  .info {
+    display: flex;
+
+    div {
+      width: 50%;
+    }
+  }
+
+  .info-section {
+  }
+
+  .button-section {
+    margin-top: 30px;
+  }
+}

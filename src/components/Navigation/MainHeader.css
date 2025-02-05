@@ -1,0 +1,53 @@
+#main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 44px;
+
+  .logo {
+    width: 10vw;
+
+    img {
+      width: 48px;
+      margin-left: 60px;
+      margin-top: -4px;
+    }
+  }
+
+  nav {
+    width: 80vw;
+  }
+
+  ul {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+  }
+
+  li {
+    list-style: none;
+
+    border-right: 1px solid rgb(80, 79, 79);
+    height: 20px;
+
+    a {
+      color: rgb(93, 93, 93);
+      margin: 0 20px;
+    }
+  }
+
+  .profile-img {
+    margin-left: 30px;
+    text-align: center;
+
+    img {
+      width: 38px;
+    }
+  }
+
+  .active {
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+  }
+}

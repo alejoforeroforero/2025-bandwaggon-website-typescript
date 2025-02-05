@@ -1,0 +1,30 @@
+#how {
+  padding: 80px 0;
+
+  .header{
+    border:1px solid green;
+    display: none;
+  }
+
+  .cartel-container {
+    width: 480px;
+  }
+
+  ul{
+    margin: 30px 0px 20px;
+    list-style:none;
+
+    li{
+      height: 30px;
+    }
+
+    span{
+      font-weight: bold;
+    }
+  }
+
+  video{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}

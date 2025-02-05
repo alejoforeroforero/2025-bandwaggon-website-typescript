@@ -1,0 +1,144 @@
+#cartel {
+  h1 {
+    font-weight: 200;
+    width: 100%;
+    font-style: italic;
+    
+  }
+
+  h1:nth-child(2n + 1) {
+    font-weight: 800;
+  }
+
+  .home {
+    text-align: right;
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .manifesto {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .manifesto:nth-child(1){
+    letter-spacing: 0.3rem;
+  }
+
+  .manifesto:nth-child(2) {
+    text-align: justify;
+    height: 80px;
+  }
+
+  .manifesto:nth-child(2):after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+
+  .manifesto:nth-child(3){
+    letter-spacing: 4rem;
+  }
+
+  .manifesto:nth-child(4){
+    letter-spacing: 0.4rem;
+  }
+
+  .how{
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+
+  .how:nth-child(2) {
+    text-align: justify;
+    height: 50px;
+  }
+
+  .how:nth-child(2):after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+
+  .how:nth-child(3){
+    letter-spacing: 4.6rem;
+  }
+
+  .how:nth-child(4) {
+    text-align: justify;
+    height: 50px;
+  }
+
+  .how:nth-child(4):after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+
+  .artist{
+    font-size: 4.4rem;
+    line-height: 4.4rem;
+    height: 65px;
+  }
+
+  .artist:nth-child(1) {
+    text-align: justify;
+    height: 65px;
+    letter-spacing: 0.6rem;
+  }
+
+  .artist:nth-child(1):after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+
+  .artist:nth-child(3) {
+    text-align: justify;
+    height: 65px;
+  }
+
+  .artist:nth-child(3):after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+
+  .artist:nth-child(4) {
+    text-align: justify;
+    height: 65px;
+  }
+
+  .artist:nth-child(4):after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+
+  .label{
+    font-size: 4.1rem;
+    line-height: 4.1rem;
+    height: 65px;
+  }
+
+  .label:nth-child(1){
+    letter-spacing: 0.5rem;
+  }
+
+  .label:nth-child(3) {
+    text-align: justify;
+    height: 65px;
+  }
+
+  .label:nth-child(3):after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
+
+  .label:nth-child(4){
+    letter-spacing: 3.8rem;
+  }
+  
+  
+}
