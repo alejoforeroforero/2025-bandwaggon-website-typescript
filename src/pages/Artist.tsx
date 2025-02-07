@@ -3,6 +3,9 @@ import Button from "@/components/UI/Button";
 
 import "./Artist.css";
 
+const videoSrc =
+  "https://res.cloudinary.com/dlmutdhbp/video/upload/v1738949089/bandwaggon-artists-video_udl4zn.mp4";
+
 const Artist = () => {
   const phrases = [
     "BANDWAGGON:",
@@ -17,10 +20,10 @@ const Artist = () => {
   };
   return (
     <main id="artist">
-      <h1 className="header">ARTIST</h1>
       <div className="info-general">
         <div className="cartel">
           <div className="cartel-container">
+            <h1 className="header">ARTIST</h1>
             <Cartel phrases={phrases} classTittle="artist" />
           </div>
         </div>
@@ -29,7 +32,9 @@ const Artist = () => {
           <p>We are personally invested in helping every talented</p>
           <p>artist wanting to become pro, with the time and the</p>
           <p>tools they need to succeed.</p>
-          <video src=""></video>
+          <video autoPlay loop muted src={videoSrc}>
+            Your browser does not support the video tag.
+          </video>
           <div className="button-section-2">
             <Button
               label="JOIN THE WAITING LIST"
