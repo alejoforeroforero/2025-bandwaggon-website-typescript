@@ -54,6 +54,7 @@ const Contact = () => {
           </div>
         </div>
       }
+      isHome={false}
     />
   );
 };

@@ -60,6 +60,7 @@ const How = () => {
           </div>
         </div>
       }
+      isHome={false}
     />
   );
 };
