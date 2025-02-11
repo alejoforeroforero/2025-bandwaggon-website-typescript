@@ -1,0 +1,54 @@
+.team-title {
+  width: 100%;
+  margin-left: 65px;
+
+  img {
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-title {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 28%;
+    }
+  }
+}
+
+.team-left {
+  overflow: hidden;
+}
+
+.team-img {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.team-info {
+  text-align: left;
+  font-size: 1.1rem;
+
+  p{
+    margin-bottom: 15px;
+  }
+}
+
+.team-info-button {
+  margin-top: 80px;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .team-info-button {
+    margin-top: 60px;
+    text-align: center;
+  }
+}

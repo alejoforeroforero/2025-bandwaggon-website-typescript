@@ -1,15 +1,15 @@
-import './Cartel.css'
+import "./Cartel.css";
 
 type cartelType = {
   phrases: string[];
-  classTittle: string;
+  className: string;
 };
 
-const Cartel = ({ phrases, classTittle }: cartelType) => {
+const Cartel = ({ phrases, className }: cartelType) => {
   return (
-    <div id='cartel'>
+    <div className={className}>
       {phrases.map((phrase, index) => {
-        return <h1 key={index} className={classTittle}>{phrase}</h1>;
+        return <h1 key={index}>{phrase}</h1>;
       })}
     </div>
   );

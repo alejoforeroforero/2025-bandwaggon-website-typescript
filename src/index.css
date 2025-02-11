@@ -36,7 +36,6 @@ body {
   }
 }
 
-
 main {
   min-height: 80vh;
 }
@@ -46,7 +45,7 @@ p{
 }
 
 video {
-  border: 1px solid #333;
+  border: 1px solid #d3d3d3;
 }
 
 a {

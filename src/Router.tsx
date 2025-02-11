@@ -9,6 +9,7 @@ import Labels from "@/pages/Labels.tsx";
 import Team from "@/pages/Team";
 import Contact from "@/pages/Contact";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/team",
         element: <Team />,
+      },
+      {
+        path: "/team/:memberId",
+        element: <Team />, 
       },
       {
         path: "/contact",

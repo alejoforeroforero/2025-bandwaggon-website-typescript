@@ -1,4 +1,4 @@
-import Cartel from "@/components/UI/Cartel";
+import Content from "@/components/UI/Content";
 import Button from "@/components/UI/Button";
 
 import "./How.css";
@@ -6,56 +6,61 @@ import "./How.css";
 const videoSrc =
   "https://res.cloudinary.com/dlmutdhbp/video/upload/v1738949089/bandwaggon-how-it-works-video_wzkpx0.mp4";
 
-const How = () => {
-  const phrases = [
-    "HOP ON BANDWAGGON:",
-    "WE'LL DO THE",
-    "ADMIN,",
-    "YOU KEEP DOING...",
-    "WHATEVER THAT IS!",
-  ];
+const cartelImgSrc =
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739142869/how-cartel_kjljut.png";
 
+const titleImgSrc =
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739142868/how-title_cumk9c.png";
+
+const How = () => {
   const handleJoin = () => {
     console.log("Join");
   };
+
   return (
-    <main id="how">
-      <div className="info-general">
-        <div className="cartel">
-          <div className="cartel-container">
-            <div>
-              <h1 className="header">HOW-IT-WORKS</h1>
-              <Cartel phrases={phrases} classTittle="how" />
+    <Content
+      top={
+        <div className="how-title">
+          <img src={titleImgSrc} alt="" />
+        </div>
+      }
+      left={
+        <div className="how-left">
+          <div className="how-img">
+            <img src={cartelImgSrc} alt="" />
+          </div>
+        </div>
+      }
+      right={
+        <div className="how-right">
+          <div className="how-info">
+            <p>The music industry is overly complicated.</p>
+            <p>We break it down for you:</p>
+            <ul>
+              <li>
+                <span>1</span> - sign an or download the app
+              </li>
+              <li>
+                <span>2</span> - ask for what you need
+              </li>
+              <li>
+                <span>3</span> - done!
+              </li>
+            </ul>
+            <video autoPlay loop muted playsInline src={videoSrc}>
+              Your browser does not support the video tag.
+            </video>
+            <div className="how-info-button">
+              <Button
+                label="JOIN THE WAITING LIST"
+                classTitle="button-t1"
+                onClick={handleJoin}
+              />
             </div>
           </div>
         </div>
-        <div className="info-section-t2">
-          <p>The music industry is overly complicated.</p>
-          <p>We break it down for you:</p>
-          <ul>
-            <li>
-              <span>1</span> - sign an or download the app
-            </li>
-            <li>
-              <span>2</span> - ask for what you need
-            </li>
-            <li>
-              <span>3</span> - done!
-            </li>
-          </ul>
-          <video autoPlay loop muted src={videoSrc}>
-            Your browser does not support the video tag.
-          </video>
-          <div className="button-section-2">
-            <Button
-              label="JOIN THE WAITING LIST"
-              classTitle="button-t2"
-              onClick={handleJoin}
-            />
-          </div>
-        </div>
-      </div>
-    </main>
+      }
+    />
   );
 };
 

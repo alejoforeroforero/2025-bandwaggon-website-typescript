@@ -1,100 +1,72 @@
-#manifiesto {
-  padding: 80px 0;
+.manifesto-left {
+  overflow: hidden;
+}
 
-  .cartel-container {
-    width: 480px;
-  }
+.manifesto-img {
+  width: 100%;
 
-  @media screen and (max-width: 1100px) {
-    .cartel-container {
-      width: 100vw;
-      max-width: 100%;
-      padding: 0 3%;
-    }
-  }
-
-  .cartel-p {
-    p {
-      margin-top: 20px;
-      font-size: 1.3rem;
-    }
-  }
-
-  .manifesto-p {
-    p:nth-child(2n + 1) {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    p:nth-child(2n + 2) {
-      margin-bottom: 40px;
-    }
+  img {
+    width: 100%;
   }
 }
 
-#cartel {
-  .manifesto {
-    font-size: 6rem;
-    line-height: 6rem;
-  }
+.manifesto-left-text {
+  text-align: left;
+  margin-top: 40px;
+}
 
-  @media screen and (max-width: 1100px) {
-    .manifesto {
-      font-size: 3.5rem;
-      line-height: 4rem;
-      padding: 0 20px 0 0;
-    }
+@media screen and (max-width: 900px) {
+  .manifesto-left-text {
+    text-align: left;
+    margin-bottom: 80px;
   }
+}
 
-  .manifesto:nth-child(1) {
-    letter-spacing: 0.3rem;
-    font-weight: 800 !important;
+.manifesto-left-text p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .manifesto-left-text p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
   }
+}
 
-  @media screen and (max-width: 1100px) {
-    .manifesto:nth-child(1) {
-      letter-spacing: 0.1rem;
-      font-weight: 800 !important;
-    }
+.manifesto-right {
+  text-align: left;
+}
+
+.manifesto-right p {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .manifesto-right p {
+    font-size: 1rem;
   }
+}
 
-  .manifesto:nth-child(2) {
-    text-align: justify;
-    height: 80px;
-  }
+.manifesto-right p:nth-child(2n + 1) {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-  .manifesto:nth-child(2):after {
-    content: "";
-    width: 100%;
-    display: inline-block;
-  }
+.manifesto-right p:nth-child(2n + 2) {
+  margin-bottom: 40px;
+}
 
-  @media screen and (max-width: 1100px) {
-    .manifesto:nth-child(2) {
-      text-align: justify;
-      height: 65px;
-    }
-  }
+.manifesto-right-button {
+  margin-top: 80px;
+  text-align: right;
+}
 
-  .manifesto:nth-child(3) {
-    letter-spacing: 4rem;
-    font-weight: 800 !important;
-  }
-
-  @media screen and (max-width: 1100px) {
-    .manifesto:nth-child(3) {
-      letter-spacing: 2rem;
-      font-weight: 800 !important;
-    }
-  }
-
-  .manifesto:nth-child(4) {
-    letter-spacing: 0.4rem;
-  }
-
-  @media screen and (max-width: 1100px) {
-    .manifesto:nth-child(4) {
-      letter-spacing: 0.08rem;
-    }
+@media screen and (max-width: 768px) {
+  .manifesto-right-button {
+    margin-top: 80px;
+    text-align: center;
   }
 }

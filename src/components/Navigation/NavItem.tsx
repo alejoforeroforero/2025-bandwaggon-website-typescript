@@ -2,12 +2,13 @@ import { NavLink } from "react-router-dom";
 
 type NavInfo = {
   label: string;
-  to:string
+  to:string;
+  onClick?: () => void;
 };
 
-const NavItem = ({ label, to }: NavInfo) => {
+const NavItem = ({ label, to, onClick }: NavInfo) => {
   return (
-    <li>
+    <li onClick={onClick}>
       <NavLink
         to={to}
         className={({ isActive }) => (isActive ? "active" : "")}

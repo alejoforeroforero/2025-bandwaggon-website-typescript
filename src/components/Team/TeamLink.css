@@ -1,0 +1,44 @@
+.team-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  margin: 30px 0;
+}
+
+.team-link img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.team-link figcaption {
+  padding: 0 20px;
+
+  p {
+    line-height: 0.5rem;
+    font-weight: 400;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-link figcaption {
+    p {
+      line-height: 1.2rem;
+    }
+  }
+}
+
+.placeholder-image {
+  width: 50px;
+  height: 50px;
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.8em;
+  color: darkgray;
+}

@@ -1,83 +1,94 @@
-#artist {
-  padding: 80px 0;
+.artist-title {
+  width: 100%;
+  margin-left: 65px;
 
-  .header {
-    text-align: left;
-    transform: translate(0px, -60px);
-    padding: 0px 4px;
-    font-size: 4rem;
-    font-style: italic;
+  img {
+    width: 16%;
   }
+}
 
-  .cartel-container {
-    width: 480px;
-  }
-
-  video {
+@media screen and (max-width: 768px) {
+  .artist-title {
     width: 100%;
-    margin: 30px 0 40px;
-  }
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
 
-  .info-section-t2 {
-    p:nth-child(1) {
-      font-weight: bold;
+    img {
+      width: 25%;
     }
   }
 }
 
-#cartel{
+.artist-left {
+  overflow: hidden;
+}
 
-  .artist{
-    font-size: 4.4rem;
-    line-height: 4.4rem;
-    display: inline-block; 
-    transform: scaleY(1.4); 
-    transform-origin: left; 
+.artist-img {
+  width: 100%;
+
+  img {
+    width: 100%;
   }
+}
 
-  .artist:nth-child(1) {
-    text-align: justify;
-    letter-spacing: 0.6rem;
+.artist-left-text {
+  text-align: left;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .artist-left-text {
+    text-align: left;
+    margin-bottom: 80px;
+  }
+}
+
+.artist-left-text p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .artist-left-text p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}
+
+.artist-right {
+}
+
+.artist-info {
+  text-align: left;
+  font-size: 1.1rem;
+
+  p:nth-child(1) {
     font-weight: 800;
   }
 
-  .artist:nth-child(1):after {
-    content: "";
+  video {
     width: 100%;
-    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
+}
 
-  .artist:nth-child(2) {
-    transform: scaleY(1.4) translate(0, -34px);
+@media screen and (max-width: 768px) {
+  .artist-info {
+    font-size: 1rem;
   }
+}
 
-  .artist:nth-child(3) {
-    text-align: justify;
-    font-weight: 800;
-    transform: scaleY(1.4) translate(0, -8px);    
+.artist-info-button {
+  margin-top: 40px;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .artist-info-button {
+    text-align: center;
   }
-
-  .artist:nth-child(3):after {
-    content: "";
-    width: 100%;
-    display: inline-block;
-  }
-
-  .artist:nth-child(4) {
-    text-align: justify;
-    transform: scaleY(1.4) translate(0, -34px); 
-  }
-
-  .artist:nth-child(4):after {
-    content: "";
-    width: 100%;
-    display: inline-block;
-  }
-
-  .artist:nth-child(5) {
-    text-align: justify;
-    font-weight: 800;
-    transform: scaleY(1.4) translate(0, -66px);
-  }
-
 }
