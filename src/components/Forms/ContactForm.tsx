@@ -8,6 +8,8 @@ type FormData = {
   message: string;
 };
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<{
@@ -25,7 +27,7 @@ const ContactForm = () => {
   const onSubmit = useCallback(async (data: FormData) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch('http://localhost:3000/send-email', {
+      const response = await fetch(`${API_URL}/send-email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

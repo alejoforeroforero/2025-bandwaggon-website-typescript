@@ -1,6 +1,9 @@
 services:
   vite-app:
-    build: .
+    build: 
+      context: .
+      args:
+        - VITE_API_URL=${VITE_API_URL}
     ports:
       - "8084:80"
     volumes:
