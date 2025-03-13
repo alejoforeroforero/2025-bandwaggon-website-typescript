@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { useCallback } from "react";
 import "./ContactForm.css"; // Import CSS file
 
 type FormData = {
@@ -14,9 +15,10 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm<FormData>();
 
-  const onSubmit = (data: FormData) => {
+  const onSubmit = useCallback((data: FormData) => {
     console.log(data);
-  };
+    // Este callback se mantendría estable entre re-renders
+  }, []);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="form-container">

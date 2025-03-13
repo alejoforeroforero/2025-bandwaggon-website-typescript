@@ -20,6 +20,20 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .labels-title {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 12%;
+    display: flex;
+    justify-content: left;
+
+    img {
+      width: 25%;
+    }
+  }
+}
+
 .labels-left {
   overflow: hidden;
 }
@@ -64,5 +78,11 @@
 @media screen and (max-width: 768px) {
   .labels-info-button {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .labels-info-button {
+    margin-top: 20px;
   }
 }

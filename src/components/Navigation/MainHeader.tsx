@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Logo from "./Logo";
 import NavItem from "./NavItem";
 import ProfileImage from "./ProfileImage";
@@ -8,7 +8,9 @@ import "./MainHeader.css";
 const MainHeader: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const closeMenu = () => setIsOpen(false);
+  const closeMenu = useCallback(() => {
+    setIsOpen(false);
+  }, []);
 
   return (
     <header id="main-header">

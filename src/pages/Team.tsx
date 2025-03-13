@@ -7,10 +7,10 @@ import "./Team.css";
 import TeamLink from "@/components/Team/TeamLink";
 
 const cartelImgSrc =
-  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739146562/team-cartel_lnoe2y.png";
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741825073/bw-the-team-block_zldemx.svg";
 
 const titleImgSrc =
-  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739146562/team-title_kudxu2.png";
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741825074/bw-the-team-title_zmvm7s.svg";
 
 const Team = () => {
   const { memberId } = useParams();

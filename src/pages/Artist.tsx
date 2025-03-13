@@ -7,10 +7,10 @@ const videoSrc =
   "https://res.cloudinary.com/dlmutdhbp/video/upload/v1738949089/bandwaggon-artists-video_udl4zn.mp4";
 
 const cartelImgSrc =
-  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739145141/artist-cartel_rgifdp.png";
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741824679/bw-artists-block_a60khu.svg";
 
 const titleImgSrc =
-  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739145141/artist-title_ngvwuh.png";
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741824754/bw-artists-title_mzurro.svg";
 
 const Artist = () => {
   const handleJoin = () => {

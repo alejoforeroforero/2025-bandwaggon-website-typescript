@@ -20,6 +20,20 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .team-title {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 12%;
+    display: flex;
+    justify-content: left;
+
+    img {
+      width: 28%;
+    }
+  }
+}
+
 .team-left {
   overflow: hidden;
 }

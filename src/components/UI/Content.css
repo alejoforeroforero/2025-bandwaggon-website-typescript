@@ -21,6 +21,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .page-contents {
+    margin: 0px auto;
+  }
+}
+
 .page-contents-top {
   margin-bottom: 60px;
 }

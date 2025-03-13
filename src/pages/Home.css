@@ -26,11 +26,12 @@
 .home-right p {
   font-size: 1.1rem;
   line-height: 0;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
   .home-right p {
-    line-height: 1.3rem;
+    line-height: 1.2rem;
     font-size: 1rem;
   }
 }
@@ -42,5 +43,11 @@
 @media screen and (max-width: 768px) {
   .home-right-button {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-right-button {
+    margin-top: 40px;
   }
 }

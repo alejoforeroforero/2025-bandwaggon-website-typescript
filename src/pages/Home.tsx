@@ -5,16 +5,16 @@ import "./Home.css";
 
 const Home = () => {
   const cartelImgSrc =
-    "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739045946/home-cartel_hogyzd.png";
+    "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741825007/bw-landing-page-centred_e2bccw.svg";
 
   const info = `Music creation? You're a pro.
   <br>
-  <br>
+  
 Band management? Emails, scheduling,<br>
 countless hours dealing with spreadsheets?<br>
 No thanks!<br>
-<br>
-<br>
+
+
 Talk to your personal band manager they<br>
 will sort it out. Your music career now<br>
 has a place and an admin-free future.`;

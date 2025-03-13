@@ -5,7 +5,7 @@ import "./Manifesto.css";
 
 const Manifesto = () => {
   const cartelImgSrc =
-    "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739044358/manifesto-cartel_phbwkf.png";
+    "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741825075/bw-manifesto_a5hoai.svg";
 
   const infoLeft = `We, as musicians and innovators, see the need for change.<br>\n
     Creativity is not black or white.<br>\n

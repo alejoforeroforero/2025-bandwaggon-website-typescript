@@ -20,6 +20,20 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .artist-title {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 12%;
+    display: flex;
+    justify-content: left;
+
+    img {
+      width: 25%;
+    }
+  }
+}
+
 .artist-left {
   overflow: hidden;
 }
@@ -92,3 +106,10 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .artist-info-button {
+    margin-top: 20px;
+  }
+}
+

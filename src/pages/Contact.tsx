@@ -5,10 +5,10 @@ import "./Contact.css";
 import ContactForm from "@/components/Forms/ContactForm";
 
 const cartelImgSrc =
-  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739192173/contact-cartel_icjmv2.png";
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741824804/bw-contact-block_lhs8y3.svg";
 
 const titleImgSrc =
-  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739192173/contact-title_rb3qva.png";
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741824803/bw-contact-title_zckleg.svg";
 
 const Contact = () => {
   const handleJoin = () => {

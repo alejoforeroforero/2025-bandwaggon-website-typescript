@@ -7,10 +7,10 @@ const videoSrc =
   "https://res.cloudinary.com/dlmutdhbp/video/upload/v1738949089/bandwaggon-how-it-works-video_wzkpx0.mp4";
 
 const cartelImgSrc =
-  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739142869/how-cartel_kjljut.png";
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741824880/bw-how-it-works-block_jeaswy.svg";
 
 const titleImgSrc =
-  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739142868/how-title_cumk9c.png";
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741824880/bw-how-it-works-title_uek0wg.svg";
 
 const How = () => {
   const handleJoin = () => {

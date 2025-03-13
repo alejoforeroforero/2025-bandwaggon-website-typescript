@@ -1,5 +1,6 @@
 import Content from "@/components/UI/Content";
 import Button from "@/components/UI/Button";
+import { useCallback } from 'react';
 
 import "./Labels.css";
 
@@ -7,15 +8,16 @@ const videoSrc =
   "https://res.cloudinary.com/dlmutdhbp/video/upload/v1738949089/bandwaggon-labels-video_f5pqmf.mp4";
 
 const cartelImgSrc =
-  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739145997/labels-cartel_bc6uql.png";
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741824953/bw-labels-block_ukvzzh.svg";
 
 const titleImgSrc =
-  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1739145996/labels-title_ptb0e1.png";
+  "https://res.cloudinary.com/dlmutdhbp/image/upload/v1741824953/bw-labels-title_uysctz.svg";
 
 const Labels = () => {
-  const handleJoin = () => {
+  const handleJoin = useCallback(() => {
     console.log("Join");
-  };
+    // Este callback se mantendría estable entre re-renders
+  }, []);
 
   return (
     <Content
