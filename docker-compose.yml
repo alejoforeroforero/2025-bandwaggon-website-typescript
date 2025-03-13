@@ -2,8 +2,6 @@ services:
   vite-app:
     build: 
       context: .
-      args:
-        - VITE_API_URL=${VITE_API_URL}
     ports:
       - "8084:80"
     volumes:
@@ -15,8 +13,8 @@ services:
     build: 
       context: ./backend
       dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
+    expose:
+      - "3000"  # Cambiado de ports a expose ya que solo necesitamos acceso interno
     env_file:
       - ./backend/.env
     volumes:
